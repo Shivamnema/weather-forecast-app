@@ -1,0 +1,132 @@
+body {
+    background-color: #00BCD4;
+}
+
+@-moz-document url-prefix() {
+    fieldset {
+        display: table-cell;
+    }
+}
+
+.container {
+    background: #eee;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0 50px 20px;
+    border-radius: 10px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 5px;
+    font: inherit;
+    color: inherit;
+    text-align: center;
+}
+
+.search {
+    background-color: #ffffff;
+    text-align: center;
+    margin: 3%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#temperature,
+#condition,
+#actualfeel,
+#highlow,
+#rain-chance,
+#wind {
+    padding-left: 30px;
+    line-height: 10px;
+    margin-top: 10px;
+}
+
+.row ul li {
+    display: inline-block;
+    /*background: #d8d8d8;*/
+    padding: 20px 20px 50px 20px;
+    margin-right: 8px;
+    margin-top: 20px;
+}
+
+#footer {
+    margin-bottom: -20px;
+}
+
+
+/* Media Queries */
+
+
+/* Extra small devices (phones, less than 768px) */
+
+@media (max-width: 489px) {
+    .input-group {
+        max-width: 70%;
+    }
+    .hidden-phone {
+        display: none;
+    }
+    #refresh {
+        margin-left: 5px;
+    }
+    #header {
+        display: none !important;
+    }
+    .row ul li {
+        text-align: left;
+        padding: 15px 265px 15px 9px !important;
+    }
+    .row ul li img {
+        width: 20px;
+        height: 20px;
+    }
+    .row ul li br {
+        display: none;
+        !important
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (max-width: 768px) {
+    .navbar-form navbar-left {
+        margin-top: 15px;
+    }
+    #refresh {
+        margin-left: 5px;
+    }
+    #container {
+        padding: 10px 10px 50px 20px;
+    }
+    #header {
+        display: none !important;
+    }
+    .row ul li {
+        padding: 20px;
+        margin-top: 20px;
+        margin-right: 8px;
+        display: inline-block;
+    }
+    .bg-primary img {
+        width: 50px;
+        padding: 5px;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .navbar-form {
+        margin-top: 15px;
+    }
+    #refresh {
+        margin-left: 5px;
+    }
+}
